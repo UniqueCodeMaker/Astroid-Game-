@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Asteroids</title>
+    <style></style>
+
+    <style>
+           canvas
+        {
+               border: 2px solid white;
+               margin: 0 auto;
+               border-radius: 20px;
+               background-image: url("astD.jpg");
+        }
+        body
+        {
+            background-image: url("astC.jpg");
+        }
+
+        #Btn
+      {
+          border: 1px solid blue;
+          position: absolute;
+          font-weight: bolder;
+          display: inline;
+          margin-top: 140px;
+          margin-left: 30px;
+          width:auto;
+          height:auto;
+          background-color: #28abe3;
+          color:black;
+          font-size: 40px;
+          padding: 8px;
+          cursor: pointer;
+         
+      }
+
+       #Btn:hover{
+          background-color: rgb(0, 38, 255);
+          color:aqua;
+          font-size: 50px;
+          font-weight: bold;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          margin-top: 140px;
+          margin-left: 30px;
+          cursor: pointer;
+}
+        
+    
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border:3px solid white;
+    border-radius: 0px 5px 0 5px;
+    height:auto;
+  	width:auto;
+    background-color: #28abe3;
+    padding: 10px;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 750px;
+    font-family: segoe print;
+    background-color:#0e83cd;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size:25px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    padding-left:5px;
+
+}
+.tooltip:hover {
+background-color: white;
+color:#28abe3;
+
+}
+
+
+#upmenu {
+width:auto;
+height:auto;
+position: absolute;;
+color:white;
+font-size:25px;
+font-family:sans-serif;
+padding-left: 1150px;
+
+
+}
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <div id="Btn" onclick="newGame();">PLAY</div>
+    
+    <div id="upmenu" align="right">
+        <div class="tooltip">How to Play 
+        <span class="tooltiptext"><strong><font color="black">Instructions:</font></strong><br>1.Arrow key Up to Thrust/Move.<br>
+        2.Left/Right Arrow keys to Rotate .<br>
+        3.Space bar to shoot cannons on astroids.<br>
+        4.Click Start and Burst All astroids Enjoy :-) . 
+        </span>
+        </div>
+        </div>
+    
+
+
+    <center>
+       
+    <canvas id="gameCanvas" width="760" height="570"></canvas>
+</center>
+    <script src="Astroid.js" >
+       </script>
+
+
+
+
+</body>
+
+</html>
